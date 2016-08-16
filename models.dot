@@ -1,0 +1,10 @@
+digraph models_diagram {
+	graph[overlap=false, splines=true]
+	"Subscription" [shape=Mrecord, label="{Subscription|id :integer\lchargebee_id :string\lplan_id :integer\lplan_quantity :integer\lcustomer_id :integer\lstatus :string\levent_last_modified_at :datetime\lchargebee_data :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Customer" [shape=Mrecord, label="{Customer|id :integer\lfirst_name :string\llast_name :string\lemail :string\lphone :string\lcompany :string\lcreated_at :datetime\lupdated_at :datetime\lchargebee_id :string\levent_last_modified_at :datetime\lchargebee_data :text\l}"]
+	"PaymentMethod" [shape=Mrecord, label="{PaymentMethod|id :integer\lcb_customer_id :string\lauto_collection :boolean\lpayment_type :string\lreference_id :string\lcard_last4 :string\lcard_type :string\lstatus :string\levent_last_modified_at :datetime\lsubscription_id :integer\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Plan" [shape=Mrecord, label="{Plan|id :integer\lname :string\lplan_id :string\lstatus :string\lchargebee_data :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Subscription" -> "PaymentMethod" [arrowtail=odot, arrowhead=dot, dir=both color="#2FFC03"]
+	"Customer" -> "Subscription" [arrowtail=odot, arrowhead=dot, dir=both color="#B9D3B3"]
+	"Plan" -> "Subscription" [arrowtail=odot, arrowhead=crow, dir=both color="#1C2CD2"]
+}

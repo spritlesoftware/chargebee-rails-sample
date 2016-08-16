@@ -1,0 +1,40 @@
+* Ruby version
+
+* System dependencies
+    chargeebee 
+    chargeebee_rails
+
+* Getting started
+
+1) Clone chargebee_rails gem
+
+2) Navigate to folder <chargebee_rails>
+
+3) Run <rake install>
+
+4) Navigate to rails project folder
+
+5) Run bundle install
+
+6) Run rake db:setup
+
+7) Start the server <rails server>
+
+8) Setup your environment variable in .env file
+
+CHARGEBEE_SITE=<zxxxxy>
+
+CHARGEBEE_API_KEY=<zzzz>
+
+9) Create a new paln from the console (Note : use the existing plan created in chargebee web in your account)
+
+Plan.create(name: "Default Plan", price: 7, plan_id: "default-plan", status: "active")
+
+Match the name, price, id from your chargebee web.
+
+
+* How to run the test suite
+
+
+
+   
