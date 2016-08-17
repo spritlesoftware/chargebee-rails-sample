@@ -1,10 +1,10 @@
 # Chargebee-rails-sample
 
-Sample rails app built using Chargebee rails subscriptions gem (https://rubygems.org/gems/chargebee-rails-subscriptions)
+Sample rails app built using Chargebee rails subscriptions gem (https://rubygems.org/gems/chargebee_rails)
 
 # Getting Started
 
-  * **Fork and clone the app**
+  * **Clone the app**
   
   * **Navigate to the *chargebee-rails-sample* folder**
   
